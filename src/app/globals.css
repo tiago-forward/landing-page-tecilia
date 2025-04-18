@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary: #bf887e;
+  --secondary: #56626a;
+  --tertiary: #7c3710;
+
+  --pr-1: #ebe6e6;
+  --pr-2: #dcc9c0;
+  --sr-1: #dad3cc;
+  --sr-2: #f9e2d8;
+  --sr-3: #bdc6c3;
+
+  --black: #010101;
+  --white: #ffffff;
+}
