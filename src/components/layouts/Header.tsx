@@ -44,11 +44,15 @@ export const Header = () => {
         </div> */}
         <div className="w-full max-w-6xl px-4 flex justify-between items-center gap-2">
           <Link href={"#home"} className="flex flex-col items-center">
-            <span className="font-bold text-xl">Dra. Tecilia Santos</span>
-            <span className="font-normal ">Fisioterapéuta</span>
+            <span className="font-bold text-xl text-txt-tertiary">
+              Dra. Tecilia Santos
+            </span>
+            <span className="font-normal text-txt-tertiary">
+              Fisioterapéuta
+            </span>
           </Link>
           <nav className="hidden max-w-6xl lg:flex lg:flex-1 lg:items-center lg:justify-center gap-8">
-            <ul className="flex items-center gap-4">
+            <ul className="flex items-center gap-4 text-lg uppercase text-txt-tertiary">
               {navigationLinks.map((link) => (
                 <li
                   key={link.id}

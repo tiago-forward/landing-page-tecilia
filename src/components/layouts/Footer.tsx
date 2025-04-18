@@ -1,10 +1,11 @@
 import { socialMediaLinks } from "@/constants/socialMediaLinks";
+import Image from "next/image";
 import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="w-full flex flex-col items-center justify-center transition-colors duration-500 bg-black text-white gap-4 border-t py-10">
-      <div className="w-full max-w-screen-xl m-auto flex flex-col items-center gap-4">
+    <footer className="w-full flex flex-col items-center justify-center transition-colors duration-500 bg-bg-footer text-txt-secondary gap-4 border-t py-4">
+      <div className="w-full max-w-screen-xl m-auto flex flex-col items-center gap-4 mt-4">
         <div className="flex flex-col lg:flex-row items-center lg:justify-between gap-2 w-full">
           <Link href={"#home"} className="flex flex-col items-center">
             <span className="font-bold text-xl">Dra. Tecilia Santos</span>
@@ -30,22 +31,25 @@ export const Footer = () => {
             </ul>
           </nav>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col mt-10">
           <p className="text-sm text-center">
             Todos os Direitos Reservados Copyright © {new Date().getFullYear()}
           </p>
-          <div>
-            <p className="text-xs text-center">
-              Desenvolvido por{" "}
-              <span className="text-blue-700 font-bold">
-                <Link
-                  href="https://www.linkedin.com/in/tiago-lacerda-devfrontend/"
-                  target="_blank"
-                  className="hover:underline"
-                >
-                  Tiago Forward
-                </Link>
-              </span>
+          <div className="flex flex-col items-center">
+            <p className="text-xs text-center text-txt-desc-secondary">
+              Desenvolvido por:{" "}
+              <Link
+                href="https://www.linkedin.com/in/tiago-lacerda-devfrontend/"
+                target="_blank"
+                className="hover:underline"
+              >
+                <Image
+                  src={"/assets/images/logos/tiago-forward.png"}
+                  alt=""
+                  width={120}
+                  height={40}
+                />
+              </Link>
             </p>
           </div>
         </div>

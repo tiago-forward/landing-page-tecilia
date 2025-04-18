@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e4e5e7;
+}
+
+@theme inline {
+  --color-bg-footer: #614017;
+
+  --color-txt-primary: #000000;
+  --color-txt-secondary: #ffffff;
+  --color-txt-tertiary: #5b3a14;
+  --color-txt-title-primary: #000000;
+  --color-txt-title-secondary: #ffffff;
+
+  --color-txt-dev: #000000;
+}
+
+.backgroundGrandientHero {
+  background-size: 100% 100%;
+  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  background-image: radial-gradient(
+      113% 91% at 17% -2%,
+      #efdd87 1%,
+      #ff000000 99%
+    ),
+    radial-gradient(142% 91% at 83% 7%, #ffdb00e6 1%, #ff000000 99%),
+    radial-gradient(142% 91% at -6% 74%, #e4e5e7 1%, #ff000000 99%),
+    radial-gradient(142% 91% at 111% 84%, #e4e5e7 0%, #e4e5e7 100%);
+}
+
+.backgroundGradientAbout {
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-image: linear-gradient(360deg, #fdf7ebff 0%, #e4e5e7 98%);
+}
