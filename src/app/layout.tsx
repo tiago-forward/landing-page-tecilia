@@ -40,12 +40,12 @@ export default function RootLayout({
           target="_blank"
           className="group z-50 fixed right-6 bottom-6 grid place-items-center rounded-full cursor-pointer duration-300 ease-linear p-3 lg:p-4 border-2 border-transparent bg-green-500 hover:bg-green-600 hover:border-green-700"
         >
-          <Image
+          {/* <Image
             src={WhatsApp}
             alt="Icone do Whatsapp"
             width={20}
             height={20}
-          />
+          /> */}
         </a>
       </body>
     </html>
