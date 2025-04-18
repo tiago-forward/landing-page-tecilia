@@ -1,7 +1,7 @@
 import { socialMediaLinks } from "@/constants/socialMediaLinks";
 import Link from "next/link";
 
-export default function Footer() {
+export const Footer = () => {
   return (
     <footer className="w-full flex flex-col items-center justify-center transition-colors duration-500 bg-black text-white gap-4 border-t py-10">
       <div className="w-full max-w-screen-xl m-auto flex flex-col items-center gap-4">
@@ -52,4 +52,4 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};
