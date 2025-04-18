@@ -3,6 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layouts/Header";
 import Footer from "@/components/layouts/Footer";
+import Image from "next/image";
+
+import WhatsApp from "@/image/whatsapp.png";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +35,18 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <a
+          href="https://wa.me/5583998310461"
+          target="_blank"
+          className="group z-50 fixed right-6 bottom-6 grid place-items-center rounded-full cursor-pointer duration-300 ease-linear p-3 lg:p-4 border-2 border-transparent bg-green-500 hover:bg-green-600 hover:border-green-700"
+        >
+          <Image
+            src={WhatsApp}
+            alt="Icone do Whatsapp"
+            width={20}
+            height={20}
+          />
+        </a>
       </body>
     </html>
   );
