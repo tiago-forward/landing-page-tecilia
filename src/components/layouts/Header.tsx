@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
 import { MobileMenu } from "@/components/layouts/MobileMenu";
-
 import { navigationLinks } from "@/constants/navigationLinks";
 import { socialMediaLinks } from "@/constants/socialMediaLinks";
 import Link from "next/link";
+import Image from "next/image";
+import Logo from "../../../public/assets/logos/Marca D_água-02.png";
 
 export const Header = () => {
   const [effectScroll, setEffectScroll] = useState<boolean>(false);
@@ -28,8 +28,8 @@ export const Header = () => {
       <header
         className={
           effectScroll
-            ? "z-50 fixed h-20 w-full flex flex-col items-center justify-center transition-colors duration-300 backdrop-blur-md bg-opacity-15 shadow-lg"
-            : "z-50 fixed h-20 w-full flex flex-col items-center justify-center transition-colors duration-300 bg-transparent"
+            ? "z-50 fixed h-40 w-full flex flex-col items-center justify-center transition-colors duration-300 backdrop-blur-md bg-opacity-15 shadow-lg"
+            : "z-50 fixed h-40 w-full flex flex-col items-center justify-center transition-colors duration-300 bg-transparent"
         }
       >
         {/* <div className="w-full border border-black">
@@ -42,14 +42,11 @@ export const Header = () => {
             <div></div>
           </nav>
         </div> */}
-        <div className="w-full max-w-6xl px-4 flex justify-between items-center gap-2">
+        <div className="w-full max-w-7xl px-4 flex justify-between items-center gap-2">
           <Link href={"#home"} className="flex flex-col items-center">
-            <span className="font-bold text-xl text-txt-tertiary">
-              Dra. Tecilia Santos
-            </span>
-            <span className="font-normal text-txt-tertiary">
-              Fisioterapéuta
-            </span>
+            <div className="overflow-hidden">
+              <Image src={Logo} alt="Logo" width={500} height={160} className="overflow-hidden" />
+            </div>
           </Link>
           <nav className="hidden max-w-6xl lg:flex lg:flex-1 lg:items-center lg:justify-center gap-8">
             <ul className="flex items-center gap-4 text-lg uppercase text-txt-tertiary">
