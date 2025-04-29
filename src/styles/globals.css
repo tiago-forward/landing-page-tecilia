@@ -9,11 +9,15 @@ body {
 }
 
 @theme inline {
-  --color-bg-footer: #614017;
+  --color-bg-primary: #5F3E1B;
+  --color-bg-secondary: #E0BE14;
+  --color-bg-tertiary: #000000;
+
+  --color-bg-footer: #5F3E1B;
 
   --color-txt-primary: #000000;
   --color-txt-secondary: #ffffff;
-  --color-txt-tertiary: #5b3a14;
+  --color-txt-tertiary: #5F3E1B;
   --color-txt-title-primary: #000000;
   --color-txt-title-secondary: #ffffff;
 
@@ -28,7 +32,7 @@ body {
       #efdd87 1%,
       #ff000000 99%
     ),
-    radial-gradient(142% 91% at 83% 7%, #ffdb00e6 1%, #ff000000 99%),
+    radial-gradient(142% 91% at 83% 7%, #E0BE14 1%, #ff000000 99%),
     radial-gradient(142% 91% at -6% 74%, #e4e5e7 1%, #ff000000 99%),
     radial-gradient(142% 91% at 111% 84%, #e4e5e7 0%, #e4e5e7 100%);
 }
