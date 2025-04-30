@@ -42,3 +42,6 @@ body {
   background-position: 0px 0px;
   background-image: linear-gradient(360deg, #fdf7ebff 0%, #e4e5e7 98%);
 }
+
+.swiper-button-next,
+.swiper-button-prev {}

@@ -1,3 +1,4 @@
+import { CarouselsAbout } from "../carousels/CarouselsAbout";
 import TitleSection from "../titles/TitleSection";
 
 export default function About() {
@@ -9,7 +10,8 @@ export default function About() {
       <div className="grid md:grid-cols-2 gap-8 items-center mt-10">
         <div className="flex flex-col gap-6">
           <h3 className="text-5xl font-bold leading-tight">
-            Cuidar da sua coluna é <br className="hidden md:block" /> cuidar da sua vida.
+            Cuidar da sua coluna é <br className="hidden md:block" /> cuidar da
+            sua vida.
           </h3>
           <p className="text-2xl text-gray-700 leading-relaxed">
             Com uma abordagem humana, precisa e baseada em evidências, ofereço
@@ -30,9 +32,22 @@ export default function About() {
       {/* Texto informativo mais abaixo */}
       <div className="mt-12">
         <p className="text-xl md:text-2xl text-justify text-gray-800 leading-relaxed">
-          Sou fisioterapeuta com especialização no tratamento de disfunções da coluna vertebral e das extremidades, atuando com foco na avaliação individualizada e no alívio da dor de forma eficaz e duradoura. Minha abordagem combina técnicas manuais, exercícios terapêuticos específicos e educação postural para promover não apenas o alívio dos sintomas, mas a real transformação funcional do corpo. Com experiência clínica sólida, estou comprometida em oferecer um atendimento humanizado, baseado em ciência e adaptado às necessidades únicas de cada paciente — seja em casos de hérnias de disco, dores cervicais, lombalgias, ciatalgias, ou lesões nos ombros, joelhos e demais articulações. Aqui, o foco está em você, no seu bem-estar e na sua autonomia.
+          Sou fisioterapeuta com especialização no tratamento de disfunções da
+          coluna vertebral e das extremidades, atuando com foco na avaliação
+          individualizada e no alívio da dor de forma eficaz e duradoura. Minha
+          abordagem combina técnicas manuais, exercícios terapêuticos
+          específicos e educação postural para promover não apenas o alívio dos
+          sintomas, mas a real transformação funcional do corpo. Com experiência
+          clínica sólida, estou comprometida em oferecer um atendimento
+          humanizado, baseado em ciência e adaptado às necessidades únicas de
+          cada paciente — seja em casos de hérnias de disco, dores cervicais,
+          lombalgias, ciatalgias, ou lesões nos ombros, joelhos e demais
+          articulações. Aqui, o foco está em você, no seu bem-estar e na sua
+          autonomia.
         </p>
       </div>
+
+      <CarouselsAbout />
     </div>
   );
 }
