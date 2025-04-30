@@ -28,8 +28,8 @@ export const Header = () => {
       <header
         className={
           effectScroll
-            ? "z-50 fixed h-40 w-full flex flex-col items-center justify-center transition-colors duration-300 backdrop-blur-md bg-opacity-15 shadow-lg"
-            : "z-50 fixed h-40 w-full flex flex-col items-center justify-center transition-colors duration-300 bg-transparent"
+            ? "z-50 fixed w-full flex flex-col items-center justify-center transition-colors duration-300 backdrop-blur-md bg-opacity-15 shadow-lg"
+            : "z-50 fixed w-full flex flex-col items-center justify-center transition-colors duration-300 bg-transparent"
         }
       >
         {/* <div className="w-full border border-black">

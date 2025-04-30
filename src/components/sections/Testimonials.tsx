@@ -3,9 +3,10 @@ import { TestimonialsDescription } from "@/constants/testimonialsDescription";
 
 export default function Testimonials() {
   return (
-    <div className="max-w-screen-xl m-auto px-2 py-8">
+    <div className="max-w-screen-xl mx-auto px-4 py-8">
       <TitleSection title="Depoimentos" />
-      <div className="flex flex-wrap gap-6 w-full">
+      <div className="flex flex-col lg:flex-row gap-8 items-center">
+        {/* VÍDEO */}
         <video
           muted
           autoPlay
@@ -15,11 +16,9 @@ export default function Testimonials() {
           loop
           preload="none"
           controls
-          width="308"
-          height="598"
           title="Depoimento da Mariana"
           poster="/assets/images/poster-mariana.jpeg"
-          className="rounded-2xl shadow-lg"
+          className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-xs rounded-2xl shadow-lg"
         >
           <source
             src="/assets/videos/Depoimentos-PM3-2024-Mariana-Pieslak.webm"
@@ -28,11 +27,11 @@ export default function Testimonials() {
         </video>
 
         {/* GRID DE DEPOIMENTOS */}
-        <div className="grid grid-cols-2 gap-4 flex-1">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
           {TestimonialsDescription.map((testimony, index) => (
             <div
               key={index}
-              className="bg-gray-100 h-full space-y-4 p-4 sm:p-6 rounded-2xl border border-gray-300 shadow flex flex-col items-center justify-center"
+              className="bg-gray-100 space-y-4 p-4 sm:p-6 rounded-2xl border border-gray-300 shadow flex flex-col justify-center"
             >
               <div className="flex items-center gap-4">
                 <img
