@@ -92,10 +92,12 @@ export function CarouselsAbout() {
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000 }}
         onInit={(swiper) => {
-          swiper.params.navigation.prevEl = prevRef.current;
-          swiper.params.navigation.nextEl = nextRef.current;
-          swiper.navigation.init();
-          swiper.navigation.update();
+          if (prevRef.current && nextRef.current) {
+            swiper.params.navigation.prevEl = prevRef.current;
+            swiper.params.navigation.nextEl = nextRef.current;
+            swiper.navigation.init();
+            swiper.navigation.update();
+          }
         }}
         breakpoints={{
           0: {
@@ -135,13 +137,13 @@ export function CarouselsAbout() {
       {/* Botões centralizados e visíveis apenas em md+ */}
       <button
         ref={prevRef}
-        className="hidden md:flex items-center justify-center absolute top-1/2 left-2 z-10 -translate-y-1/2 bg-white text-txt-tertiary p-2 rounded-full shadow"
+        className="hidden md:flex items-center justify-center absolute top-40 left-2 z-10 -translate-y-1/2 bg-white text-txt-tertiary p-2 rounded-full shadow"
       >
         <ArrowLeft />
       </button>
       <button
         ref={nextRef}
-        className="hidden md:flex items-center justify-center absolute top-1/2 right-2 z-10 -translate-y-1/2 bg-white text-txt-tertiary p-2 rounded-full shadow"
+        className="hidden md:flex items-center justify-center absolute top-40 right-2 z-10 -translate-y-1/2 bg-white text-txt-tertiary p-2 rounded-full shadow"
       >
         <ArrowRight />
       </button>
