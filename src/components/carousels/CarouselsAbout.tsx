@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import ArrowRight from "../Icons/ArrowRight";
 import ArrowLeft from "../Icons/ArrowLeft";
-import { useRef, useEffect } from "react";
+import { useRef } from "react";
 
 const data = [
   {
@@ -77,12 +77,8 @@ const data = [
 ];
 
 export function CarouselsAbout() {
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
-
-  useEffect(() => {
-    // Força o Swiper a conectar os botões após montagem
-  }, []);
+  const prevRef = useRef<HTMLButtonElement>(null);
+  const nextRef = useRef<HTMLButtonElement>(null);
 
   return (
     <div className="relative mt-12">
@@ -91,13 +87,9 @@ export function CarouselsAbout() {
         loop={true}
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000 }}
-        onInit={(swiper) => {
-          if (prevRef.current && nextRef.current) {
-            swiper.params.navigation.prevEl = prevRef.current;
-            swiper.params.navigation.nextEl = nextRef.current;
-            swiper.navigation.init();
-            swiper.navigation.update();
-          }
+        navigation={{
+          prevEl: prevRef.current!,
+          nextEl: nextRef.current!,
         }}
         breakpoints={{
           0: {
@@ -137,13 +129,13 @@ export function CarouselsAbout() {
       {/* Botões centralizados e visíveis apenas em md+ */}
       <button
         ref={prevRef}
-        className="hidden md:flex items-center justify-center absolute top-40 left-2 z-10 -translate-y-1/2 bg-white text-txt-tertiary p-2 rounded-full shadow"
+        className="cursor-pointer hidden md:flex items-center justify-center absolute top-40 left-2 z-10 -translate-y-1/2 bg-white text-txt-tertiary p-2 rounded-full shadow"
       >
         <ArrowLeft />
       </button>
       <button
         ref={nextRef}
-        className="hidden md:flex items-center justify-center absolute top-40 right-2 z-10 -translate-y-1/2 bg-white text-txt-tertiary p-2 rounded-full shadow"
+        className="cursor-pointer hidden md:flex items-center justify-center absolute top-40 right-2 z-10 -translate-y-1/2 bg-white text-txt-tertiary p-2 rounded-full shadow"
       >
         <ArrowRight />
       </button>
