@@ -61,7 +61,7 @@ export default function Services() {
         {services.map((service) => (
           <div
             key={service.id}
-            className="flex flex-col items-center text-center p-6 bg-bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
+            className="flex flex-col items-center text-center p-4 sm:p-6 bg-bg-white border-border rounded-xl shadow hover:shadow-lg transition-shadow duration-300"
           >
             <img
               src={service.imgUrl}

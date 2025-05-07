@@ -31,7 +31,7 @@ export default function Testimonials() {
           {TestimonialsDescription.map((testimony, index) => (
             <div
               key={index}
-              className="bg-gray-100 space-y-4 p-4 sm:p-6 rounded-2xl border border-gray-300 shadow flex flex-col justify-center"
+              className="bg-gray-100 space-y-4 p-4 sm:p-6 rounded-2xl border border-border shadow flex flex-col justify-center"
             >
               <div className="flex items-center gap-4">
                 <img
@@ -44,7 +44,7 @@ export default function Testimonials() {
                   <p className="text-sm text-gray-500">{testimony.cargo}</p>
                 </div>
               </div>
-              <p className="text-sm leading-relaxed italic">
+              <p className="text-sm leading-relaxed text-txt-tertiary">
                 “{testimony.texto}”
               </p>
             </div>
