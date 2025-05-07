@@ -1,5 +1,12 @@
+"use client";
+
 import TitleSection from "../titles/TitleSection";
 import { TestimonialsDescription } from "@/constants/testimonialsDescription";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 export default function Testimonials() {
   return (
@@ -26,29 +33,43 @@ export default function Testimonials() {
           />
         </video>
 
-        {/* GRID DE DEPOIMENTOS */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
-          {TestimonialsDescription.map((testimony, index) => (
-            <div
-              key={index}
-              className="bg-gray-100 space-y-4 p-4 sm:p-6 rounded-2xl border border-border shadow flex flex-col justify-center"
-            >
-              <div className="flex items-center gap-4">
-                <img
-                  src="https://pm3.com.br/wp-content/uploads/2023/09/Luisa-Barwinski-150x150.jpeg"
-                  alt={testimony.nome}
-                  className="rounded-full w-12 h-12 object-cover"
-                />
-                <div>
-                  <p className="font-semibold">{testimony.nome}</p>
-                  <p className="text-sm text-gray-500">{testimony.cargo}</p>
+        {/* SWIPER DE DEPOIMENTOS */}
+        <div className="w-full lg:w-[70%]">
+          <Swiper
+            spaceBetween={32}
+            slidesPerView={1}
+            pagination={{ clickable: true }}
+            modules={[Pagination]}
+            breakpoints={{
+              768: { slidesPerView: 1.2 },
+              1024: { slidesPerView: 1.5 },
+            }}
+          >
+            {TestimonialsDescription.map((testimony, index) => (
+              <SwiperSlide key={index}>
+                <div className="bg-gray-100 p-8 rounded-2xl border border-border shadow-md flex flex-col justify-between min-h-[280px] mb-8">
+                  <div className="flex flex-col items-center gap-4 mb-4">
+                    <img
+                      src="https://pm3.com.br/wp-content/uploads/2023/09/Luisa-Barwinski-150x150.jpeg"
+                      alt={testimony.nome}
+                      className="rounded-full w-14 h-14 md:w-16 md:h-16 object-cover"
+                    />
+                    <div>
+                      <p className="font-semibold text-center">
+                        {testimony.nome}
+                      </p>
+                      <p className="text-md text-gray-500 text-center">
+                        {testimony.cargo}
+                      </p>
+                    </div>
+                  </div>
+                  <p className="text-2xl leading-relaxed text-txt-tertiary">
+                    “{testimony.texto}”
+                  </p>
                 </div>
-              </div>
-              <p className="text-sm leading-relaxed text-txt-tertiary">
-                “{testimony.texto}”
-              </p>
-            </div>
-          ))}
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>
