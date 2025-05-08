@@ -8,23 +8,34 @@ body {
   background-color: #e4e5e7;
 }
 
+@font-face {
+  font-family: "Actioness";
+  src: url("/fonts/Actioness.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @theme inline {
-  --color-bg-primary: #5F3E1B;
-  --color-bg-secondary: #E0BE14;
+  --color-bg-primary: #5f3e1b;
+  --color-bg-secondary: #e0be14;
   --color-bg-tertiary: #000000;
-  --color-bg-white: #F3F4F6;
+  --color-bg-white: #f3f4f6;
 
-  --color-border: #E5E7EB;
+  --color-border: #e5e7eb;
 
-  --color-bg-footer: #5F3E1B;
+  --color-bg-footer: #5f3e1b;
 
   --color-txt-primary: #000000;
   --color-txt-secondary: #ffffff;
-  --color-txt-tertiary: #5F3E1B;
+  --color-txt-tertiary: #5f3e1b;
   --color-txt-title-primary: #000000;
   --color-txt-title-secondary: #ffffff;
 
   --color-txt-dev: #000000;
+}
+
+.font-actioness {
+  font-family: "Actioness", sans-serif;
 }
 
 .backgroundGrandientHero {
@@ -35,7 +46,7 @@ body {
       #efdd87 1%,
       #ff000000 99%
     ),
-    radial-gradient(142% 91% at 83% 7%, #E0BE14 1%, #ff000000 99%),
+    radial-gradient(142% 91% at 83% 7%, #e0be14 1%, #ff000000 99%),
     radial-gradient(142% 91% at -6% 74%, #e4e5e7 1%, #ff000000 99%),
     radial-gradient(142% 91% at 111% 84%, #e4e5e7 0%, #e4e5e7 100%);
 }
@@ -47,4 +58,5 @@ body {
 }
 
 .swiper-button-next,
-.swiper-button-prev {}
+.swiper-button-prev {
+}
