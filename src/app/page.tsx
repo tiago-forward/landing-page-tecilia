@@ -16,7 +16,7 @@ export default function Home() {
             </div>
             <h1
               style={{ transform: "scaleY(1.2)" }}
-              className="font-actioness uppercase  max-w-2xl mb-20 text-3xl text-center font-bold md:text-4xl lg:text-6xl"
+              className="font-actioness uppercase max-w-2xl mb-20 text-3xl text-center font-bold md:text-4xl lg:text-6xl"
             >
               Você está sofrendo com dor na coluna?
             </h1>
@@ -36,7 +36,7 @@ export default function Home() {
       <section id="serviços" className="py-20 min-h-[79vh]">
         <Services />
       </section>
-      <section id="testemunhas" className="py-20 min-h-[79vh]">
+      <section id="depoimentos" className="py-20 min-h-[79vh]">
         <Testimonials />
       </section>
       <section id="contato" className="py-20 min-h-[79vh]">

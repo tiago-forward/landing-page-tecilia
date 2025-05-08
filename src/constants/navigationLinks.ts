@@ -11,8 +11,8 @@ export const navigationLinks = [
   },
   {
     id: 3,
-    label: "Testemunhas",
-    url: "#testemunhas",
+    label: "Depoimentos",
+    url: "#depoimentos",
   },
   {
     id: 4,

@@ -56,7 +56,7 @@ const services = [
 export default function Services() {
   return (
     <div className="max-w-screen-xl m-auto px-4 py-12">
-      <TitleSection title="Serviços" />
+      <TitleSection title="Meus principais serviços que estarei aplicando em você" />
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 not-[]:mt-12">
         {services.map((service) => (
           <div
