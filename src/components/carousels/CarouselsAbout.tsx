@@ -118,7 +118,7 @@ export function CarouselsAbout() {
                 alt={`Slide ${item.id}`}
                 className="w-full h-80 object-cover"
               />
-              <p className="mt-2 mb-6 text-center text-base md:text-lg px-2 text-txt-tertiary">
+              <p className="mt-2 mb-6 text-center text-base md:text-lg px-2 text-txt-primary">
                 {item.description}
               </p>
             </div>

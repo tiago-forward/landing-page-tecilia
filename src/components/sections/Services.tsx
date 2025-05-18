@@ -69,7 +69,7 @@ export default function Services() {
               className="w-full h-80 object-cover rounded-xl mb-4"
             />
             <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-            <p className="text-base text-txt-tertiary">{service.description}</p>
+            <p className="text-base text-txt-primary">{service.description}</p>
           </div>
         ))}
       </div>

@@ -49,7 +49,7 @@ export const Header = () => {
             </div>
           </Link>
           <nav className="hidden max-w-6xl lg:flex lg:flex-1 lg:items-center lg:justify-center gap-8">
-            <ul className="flex items-center gap-4 text-lg uppercase text-txt-tertiary">
+            <ul className="flex items-center gap-4 text-lg uppercase text-txt-primary">
               {navigationLinks.map((link) => (
                 <li
                   key={link.id}
