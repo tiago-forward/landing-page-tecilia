@@ -39,7 +39,7 @@ body {
   font-family: "Actioness", sans-serif;
 }
 
-/* .backgroundGrandientHero {
+.backgroundGrandientHero {
   background-size: 100% 100%;
   background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
   background-image: radial-gradient(
@@ -50,7 +50,7 @@ body {
     radial-gradient(142% 91% at 83% 7%, #e0be14 1%, #ff000000 99%),
     radial-gradient(142% 91% at -6% 74%, #ffffff 1%, #ff000000 99%),
     radial-gradient(142% 91% at 111% 84%, #ffffff 0%, #ffffff 100%);
-} */
+}
 
 .backgroundGradientAbout {
   background-size: 100% 100%;

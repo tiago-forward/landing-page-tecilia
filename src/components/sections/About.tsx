@@ -2,15 +2,15 @@ import { CarouselsAbout } from "../carousels/CarouselsAbout";
 
 export default function About() {
   return (
-    <div className="max-w-screen-xl mx-auto px-4 py-12">
+    <div className="max-w-screen-xl mx-auto px-4 py-12 bg-bg-secondary text-black">
       {/* Seção com imagem e frase de destaque */}
       <div className="grid md:grid-cols-2 gap-8 items-center mt-10">
         <div className="flex flex-col gap-6">
-          <h2 className="text-5xl font-semibold font-actioness leading-tight">
+          <h2 className="text-5xl font-semibold font-actioness lea  ding-tight">
             Cuidar da sua coluna é <br className="hidden md:block" /> cuidar da
             sua vida.
           </h2>
-          <p className="text-2xl text-txt-description leading-relaxed">
+          <p className="text-2xl leading-relaxed">
             Com uma abordagem humana, precisa e baseada em evidências, ofereço
             tratamento especializado para dores na coluna e nas extremidades,
             ajudando você a recuperar o movimento, a qualidade de vida e a
